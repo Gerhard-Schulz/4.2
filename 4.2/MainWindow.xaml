@@ -1,0 +1,63 @@
+﻿<Window x:Class="_4._2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_4._2"
+        mc:Ignorable="d"
+        Title="4.2" Height="500" Width="670">
+    <Grid Background="Black">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="25*"/>
+            <RowDefinition Height="20*"/>
+        </Grid.RowDefinitions>
+        <Path Fill="Red" Stroke="White" Margin="35,50,400,50" Stretch="Fill">
+            <Path.Data>
+                <GeometryGroup  FillRule="Nonzero">
+                    <EllipseGeometry Center="200,150" RadiusX="50" RadiusY="50" />
+                    <RectangleGeometry Rect="100,100 100,25" />
+                </GeometryGroup>
+            </Path.Data>
+        </Path>
+        <Path Fill="Red" Stroke="White" Margin="35,5,400,55" Stretch="Fill" Grid.Row="1">
+            <Path.Data>
+                <GeometryGroup  FillRule="EvenOdd">
+                    <EllipseGeometry Center="200,150" RadiusX="50" RadiusY="50" />
+                    <RectangleGeometry Rect="100,100 100,25" />
+                </GeometryGroup>
+            </Path.Data>
+        </Path>
+        <Canvas>
+            <Path Fill="Red" Stroke="White" Stretch="Fill" Canvas.Left="420" Canvas.Top="55" Height="150" Width="150">
+                <Path.Data>
+                    <GeometryGroup  FillRule="Nonzero">
+                        <EllipseGeometry Center="100,100" RadiusX="50" RadiusY="40" />
+                    </GeometryGroup>
+                </Path.Data>
+            </Path>
+            <Path Fill="Red" Stroke="White" Stretch="Fill" Canvas.Left="320" Canvas.Top="75" Height="40" Width="150">
+                <Path.Data>
+                    <GeometryGroup  FillRule="Nonzero">
+                        <RectangleGeometry Rect="100,90 100,90" />
+                    </GeometryGroup>
+                </Path.Data>
+            </Path>
+        </Canvas>
+        <Canvas>
+            <Path Fill="Red" Stroke="White" Stretch="Fill" Canvas.Left="420" Canvas.Top="250" Height="150" Width="150">
+                <Path.Data>
+                    <GeometryGroup  FillRule="EvenOdd">
+                        <EllipseGeometry Center="100,100" RadiusX="50" RadiusY="50" />
+                    </GeometryGroup>
+                </Path.Data>
+            </Path>
+            <Path Fill="Red" Stroke="White" Stretch="Fill" Canvas.Left="320" Canvas.Top="275" Height="40" Width="150">
+                <Path.Data>
+                    <GeometryGroup  FillRule="EvenOdd">
+                        <RectangleGeometry Rect="100,900 100,90" />
+                    </GeometryGroup>
+                </Path.Data>
+            </Path>
+        </Canvas>
+    </Grid>
+</Window>
